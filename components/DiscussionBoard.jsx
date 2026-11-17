@@ -5,7 +5,6 @@ import { mountBoard } from '../lib/board-engine';
 import BoardBackground from './BoardBackground';
 import BoardCanvas from './BoardCanvas';
 import FolderDock from './FolderDock';
-import BoardToolbar from './BoardToolbar';
 import HelperMascot from './HelperMascot';
 import BoardOverlays from './BoardOverlays';
 
@@ -18,7 +17,6 @@ export default function DiscussionBoard() {
       <BoardBackground />
       <BoardCanvas />
       <FolderDock />
-      <BoardToolbar />
       <HelperMascot />
       <BoardOverlays />
     </main>

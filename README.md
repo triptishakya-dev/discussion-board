@@ -9,4 +9,4 @@ npm run dev
 
 Open http://localhost:3000. To run the production build, use `npm run build` and then `npm start`.
 
-Edit `lib/board-config.js` for branding, floor plans, finish options, and indicative prices. Uploaded assets are stored in IndexedDB on the current browser. Estimate summaries open the device's email app by default.
+Edit `lib/board-config.js` for branding, floor plans, finish options, and indicative prices. Uploaded assets are stored in IndexedDB on the current browser. The Send summary button shows a demo confirmation.
