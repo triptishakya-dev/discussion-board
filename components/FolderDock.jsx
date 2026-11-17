@@ -1,25 +1,17 @@
 export default function FolderDock() {
   return (
     <>
-      <nav className="dock glass">
-        <button className="folder" data-f="gallery">
-          <svg viewBox="0 0 66 54"><defs><linearGradient id="fg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#7cc4ff"/><stop offset="1" stopColor="#2f8cff"/></linearGradient></defs>
-            <path d="M4 9a5 5 0 0 1 5-5h15l5 5h28a5 5 0 0 1 5 5v4H4z" fill="#2f7fe8"/><rect x="2" y="14" width="62" height="38" rx="7" fill="url(#fg1)"/><rect x="2" y="14" width="62" height="12" rx="7" fill="#fff" opacity=".18"/>
-            <rect x="21" y="23" width="24" height="20" rx="3" fill="none" stroke="#fff" strokeWidth="2.4"/><path d="M23 40l7-8 5 5 3-3 5 6" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinejoin="round"/><circle cx="38" cy="28.5" r="2.3" fill="#fff"/></svg>
-          <span>Gallery</span><small id="c-gallery"></small>
-        </button>
-        <button className="folder" data-f="pdf">
-          <svg viewBox="0 0 66 54"><defs><linearGradient id="fg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ffb37c"/><stop offset="1" stopColor="#ff7a45"/></linearGradient></defs>
-            <path d="M4 9a5 5 0 0 1 5-5h15l5 5h28a5 5 0 0 1 5 5v4H4z" fill="#ee6a36"/><rect x="2" y="14" width="62" height="38" rx="7" fill="url(#fg2)"/><rect x="2" y="14" width="62" height="12" rx="7" fill="#fff" opacity=".18"/>
-            <path d="M25 22h11l6 6v15a2 2 0 0 1-2 2H25a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2z" fill="none" stroke="#fff" strokeWidth="2.4" strokeLinejoin="round"/><path d="M27 33h11M27 38h8" stroke="#fff" strokeWidth="2.2" strokeLinecap="round"/></svg>
-          <span>Brochures</span><small id="c-pdf"></small>
-        </button>
-        <button className="folder" data-f="layout">
-          <svg viewBox="0 0 66 54"><defs><linearGradient id="fg3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#b9a6ff"/><stop offset="1" stopColor="#7b61ff"/></linearGradient></defs>
-            <path d="M4 9a5 5 0 0 1 5-5h15l5 5h28a5 5 0 0 1 5 5v4H4z" fill="#6c52ee"/><rect x="2" y="14" width="62" height="38" rx="7" fill="url(#fg3)"/><rect x="2" y="14" width="62" height="12" rx="7" fill="#fff" opacity=".18"/>
-            <rect x="20" y="22" width="26" height="22" rx="2" fill="none" stroke="#fff" strokeWidth="2.4"/><path d="M33 22v9h13M20 35h8M33 44v-6" stroke="#fff" strokeWidth="2.2"/></svg>
-          <span>Floor plans</span><small id="c-layout"></small>
-        </button>
+      <svg width="0" height="0" style={{ position: "absolute" }} aria-hidden="true"><defs>
+        <linearGradient id="gIcon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#4B5BFF"/><stop offset=".55" stopColor="#6A4DFF"/><stop offset="1" stopColor="#B16BFF"/></linearGradient>
+        <linearGradient id="gFrost" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#C9CCFF" stopOpacity=".42"/><stop offset="1" stopColor="#8E93FF" stopOpacity=".14"/></linearGradient>
+        <linearGradient id="gShine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#fff" stopOpacity=".35"/><stop offset=".5" stopColor="#fff" stopOpacity="0"/></linearGradient>
+        <filter id="fBlur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.2"/></filter>
+        <filter id="fDrop" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="5" floodColor="#2020ff" floodOpacity=".45"/></filter>
+      </defs></svg>
+      <nav className="dock glass" aria-label="Board folders">
+        <button className="folder" data-f="gallery"><span className="tile"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><clipPath id="cG"><rect x="8" y="22" width="36" height="32" rx="8"/></clipPath></defs><g filter="url(#fDrop)"><rect x="22" y="8" width="34" height="30" rx="8" transform="rotate(10 39 23)" fill="url(#gIcon)"/></g><rect x="22" y="8" width="34" height="30" rx="8" transform="rotate(10 39 23)" fill="url(#gShine)"/><g clipPath="url(#cG)"><g filter="url(#fBlur)"><rect x="22" y="8" width="34" height="30" rx="8" transform="rotate(10 39 23)" fill="url(#gIcon)"/></g></g><rect x="8" y="22" width="36" height="32" rx="8" fill="url(#gFrost)" stroke="rgba(255,255,255,.45)" strokeWidth="1"/><g fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M14 47l7-8 5 5 4-4 7 7"/><circle cx="34" cy="31" r="2.6" fill="#fff" stroke="none"/></g></svg></span><span>Gallery</span><small id="c-gallery"></small></button>
+        <button className="folder" data-f="pdf"><span className="tile"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><clipPath id="cP"><path d="M14 10h17l9 9v29a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6z"/></clipPath></defs><g filter="url(#fDrop)"><rect x="26" y="12" width="30" height="38" rx="7" transform="rotate(12 41 31)" fill="url(#gIcon)"/></g><rect x="26" y="12" width="30" height="38" rx="7" transform="rotate(12 41 31)" fill="url(#gShine)"/><g clipPath="url(#cP)"><g filter="url(#fBlur)"><rect x="26" y="12" width="30" height="38" rx="7" transform="rotate(12 41 31)" fill="url(#gIcon)"/></g></g><path d="M14 10h17l9 9v29a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6z" fill="url(#gFrost)" stroke="rgba(255,255,255,.45)" strokeWidth="1"/><g fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M15 24h12M15 31h18M15 38h18M15 45h10"/></g></svg></span><span>Brochures</span><small id="c-pdf"></small></button>
+        <button className="folder" data-f="layout"><span className="tile"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><clipPath id="cL"><rect x="8" y="20" width="36" height="34" rx="7"/></clipPath></defs><g filter="url(#fDrop)"><rect x="24" y="10" width="32" height="32" rx="8" transform="rotate(-10 40 26)" fill="url(#gIcon)"/></g><rect x="24" y="10" width="32" height="32" rx="8" transform="rotate(-10 40 26)" fill="url(#gShine)"/><g clipPath="url(#cL)"><g filter="url(#fBlur)"><rect x="24" y="10" width="32" height="32" rx="8" transform="rotate(-10 40 26)" fill="url(#gIcon)"/></g></g><rect x="8" y="20" width="36" height="34" rx="7" fill="url(#gFrost)" stroke="rgba(255,255,255,.45)" strokeWidth="1"/><g fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M14 27h24v21H14zM26 27v10h12M14 40h7M26 48v-5"/></g></svg></span><span>Floor plans</span><small id="c-layout"></small></button>
       </nav>
       
       <aside className="fly glass" id="fly"></aside>
