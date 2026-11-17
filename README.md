@@ -1,4 +1,4 @@
-# Discussion Board
+# Discussion Board t67vvvb
 
 A Next.js App Router port of the supplied discussion board. The canvas, folder dock, toolbar, background, helper, and overlays are React components. Tailwind utilities handle layout and controls; custom CSS preserves the original theme, glass effects, and animations. The board engine owns browser interactions such as drag, pinch, zoom, and media uploads.
 
