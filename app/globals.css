@@ -564,7 +564,6 @@ html[data-theme="light"] .folder.on .tile{background:#2A2A36}
   display: grid;
   place-items: center;
   padding: 16px;
-  padding-top: 20%;
   pointer-events: none;
   text-align: center;
   font-family: var(--sans);
